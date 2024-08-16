@@ -1,15 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './Header'
-import { auth } from '../utils/firebase'
-
-
-import { signOut } from 'firebase/auth'
-import { useNavigate } from 'react-router-dom'
+import  useNowPlayingMovies from  "../hooks/useNowPlayingMovies"
+import MainContainer from './MainContainer'
+import SecondaryContainer from './SecondaryContainer'
 
 const Browse = () => {
-  
+  useNowPlayingMovies()
   return (
-    <div><Header/></div>
+    <div>
+      <Header/>
+      <MainContainer/>
+      <SecondaryContainer/>
+      {
+        /*
+        MainContainer
+          -VideoBackGround
+          -VideoTitle
+        SecondaryContainer 
+
+          -MovieList*n
+            -cards*n
+
+        
+        
+        */
+      }
+      </div>
   )
 }
 

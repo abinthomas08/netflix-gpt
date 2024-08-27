@@ -6,7 +6,7 @@ import {auth} from "../utils/firebase"
 
 import {useSelector,useDispatch} from "react-redux"
 import { addUser } from '../utils/userSlice';
-import { USER_AVTARL } from '../utils/constants';
+import { BG_URL, USER_AVTARL } from '../utils/constants';
 
 const Login = () => {
 
@@ -103,7 +103,7 @@ const Login = () => {
       <Header/>
      <div className='absolute'>
      <img 
-      src='https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/80a8277e-14eb-4192-83f7-45c27cd0652b/US-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_99b9a7c9-7791-4a48-b335-09e8ee246500_medium.jpg'
+      src={BG_URL}
       alt='logo'
     />
      </div>

@@ -30,6 +30,10 @@
 - build moive card
 - TMD Image CDN URL
 - usePoupularMovie Custom hook
+- GPT search feature 
+- GPT Search Bar 
+- Mutli-language Feature in our App
+
 
 
 

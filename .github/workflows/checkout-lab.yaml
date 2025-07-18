@@ -1,0 +1,13 @@
+name: react-gpt-check-out
+on: push
+jobs: 
+    build-checkout-react: 
+        runs-on: ubuntu-latest
+        steps:
+             - name:  checkout actions 
+               uses: actions/checkout@v4
+             
+             - name: ls 
+               run: ls -a 
+             - name: build 
+               run: npm run dev 
